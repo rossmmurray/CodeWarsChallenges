@@ -1,0 +1,8 @@
+def productFib(prod):
+	i, j = 0, 1
+	while i * j < prod:
+		i, j = j, i + j
+	return [i, j, i * j == prod]
+
+
+print(productFib(4895))

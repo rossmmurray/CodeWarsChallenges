@@ -1,0 +1,9 @@
+def alphabet_position(text):
+	number_string = ''
+	for letter in text:
+		if letter.isalpha():
+			number_string = number_string + str(ord(letter.upper()) - 64) + ' '
+	return number_string[:-1]
+
+
+print(alphabet_position("The narwhal bacons at midnight."))

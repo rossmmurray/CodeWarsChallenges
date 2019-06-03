@@ -1,0 +1,9 @@
+# Initializing lists
+test_list1 = [1, 4, 5, 6, 5]
+test_list2 = [3, 5, 7, 2, 5]
+
+# using list comprehension to concat
+res_list = [y for x in [test_list1, test_list2] for y in x]
+res_list = [[y for y in x] for x in [test_list1, test_list2]]
+
+print(res_list)
